@@ -11,5 +11,8 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^41.7.1"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.5"
   }
 }

@@ -1,3 +1,6 @@
+// Load the .env from the parent root folder
+require('dotenv').config({ path: '.env' });
+
 // Test the main process of the Electron application
 console.log('main process working');
 
@@ -5,6 +8,7 @@ const { app, BrowserWindow } = require('electron');
 
 // let mainWindow, defaultWindow, backgroundColorWindow, framelessWindow, transparentWindow;
 let parentWindow, childWindow;
+const TEST_URL = process.env.TEST_URL;
 
 // Function to create an app window
 function createWindow() {
@@ -25,7 +29,7 @@ function createWindow() {
         height: 700,
     });
 
-    childWindow.loadURL('http://172.18.200.207:8090/');
+    childWindow.loadURL(TEST_URL);
 
     // Trigger show to TRUE once the link is loaded properly on the child window
     childWindow.once('ready-to-show', () => {
