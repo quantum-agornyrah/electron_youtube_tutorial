@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    -webkit-app-region: drag; /* Allow dragging the window */
+}
+
+#quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    font-family: courier, monospace;
+    height: 100vh;
+    padding: 0 20px;
+}
