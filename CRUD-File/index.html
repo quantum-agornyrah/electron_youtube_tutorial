@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron YouTube Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainWrapper">
+        <h1>CRUD File</h1>
+        <p>This is a simple Electron application that demonstrates how to create a desktop application using web technologies.</p>
+
+        <form>
+            <div class="form-group">
+                <label> File Name * </label>
+                <input id="fileName" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label> Contents </label>
+                <textarea id="fileContents" type="text" class="form-control" rows="13"></textarea>
+            </div>
+        </form>
+
+        <button id="createButton" class="btn-primary"> Create </button>
+        <button id="readButton" class="btn-primary"> Read </button>
+        <button id="deleteButton" class="btn-primary"> Delete </button>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
